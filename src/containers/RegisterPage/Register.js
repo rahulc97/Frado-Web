@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import { Form, ErrorMessage, Formik, Field } from 'formik';
 import { Multiselect } from 'multiselect-react-dropdown';
 import * as Yup from 'yup';
@@ -7,6 +6,7 @@ import './Register.scss';
 import Logo from '../../assets/register.png';
 
 import axios from '../../axios';
+
 
 const Register = (props) => {
   const courseArray = [
@@ -36,7 +36,8 @@ const Register = (props) => {
   };
   return (
     <div>
-      <NavigationBar />
+      {/* <SideDrawer/> */}
+      {/* <NavigationBar /> */}
       <div className="formContainer">
         <Formik
           initialValues={{

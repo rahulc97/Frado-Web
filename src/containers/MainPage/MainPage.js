@@ -1,17 +1,21 @@
 import React from 'react';
-import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import MainCoverImage from '../../assets/girlWrite.jpeg';
 import ComputerImage from '../../assets/computer.jpeg';
 import BookImage from '../../assets/book.jpeg';
 import NewImage from '../../assets/new.png';
 import './MainPage.scss';
 
+
 const MainPage = (props) => {
   return (
     <div>
-      <NavigationBar />
+      {/* <SideDrawer /> */}
+      {/* <div className='desktopOnly'>
+        <NavigationBar />
+      </div> */}
+
       <div className="mainCard">
-        <div className='mainContainer' >
+        <div className="mainContainer">
           <img className="imageCover" src={MainCoverImage} alt="img" />
           <div className="cardDescription">
             There are many variations of passages of Lorem Ipsum available, but
@@ -32,10 +36,10 @@ const MainPage = (props) => {
       <div className="marqueeDiv">
         <a href="/register" style={{ color: 'inherit' }}>
           <marquee>
-            <img style={{ width: '40px' }} src={NewImage} />
+            <img style={{ width: '40px' }} src={NewImage}  alt='new'/>
             &nbsp;&nbsp;&nbsp;Course Registration Started....Register Now To
             Join Our Course....!&nbsp;&nbsp;&nbsp;
-            <img style={{ width: '40px' }} src={NewImage} />
+            <img style={{ width: '40px' }} src={NewImage} alt='new' />
           </marquee>
         </a>
       </div>

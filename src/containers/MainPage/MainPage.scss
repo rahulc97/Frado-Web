@@ -65,20 +65,30 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 499px) {
+  .desktopOnly{
+    display: none;
+  }
   .mainContainer{
     flex-direction: column;
     width: 100%;
+  }
+  .marqueeDiv{
+    top: 100px;
   }
   .imageCover {
     width: 100%;
     height: 300px;
   }
+  .cardDescription{
+    padding-top: 50px;
+  }
   .mainCard{
     height: 100%;
+    overflow: visible;
   }
   .motoDiv{
-    top: 323px;
+    top: 250px;
     font-size: 35px;
   }
   .cardContainer{
@@ -88,5 +98,6 @@
   }
   .cardView{
     width: 100%;
+   
   }
 }
