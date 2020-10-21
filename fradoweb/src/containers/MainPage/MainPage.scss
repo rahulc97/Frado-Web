@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.marqueeDiv {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  color: rgb(77, 4, 4);
+  font-size: 20px;
+}
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageCover {
+  align-items: flex-start;
+  width: 50%;
+  height: 500px;
+}
+.motoDiv {
+  position: absolute;
+  top: 470px;
+  left: 10px;
+  width: 100%;
+  color: #52af50;
+  font-size: 60px;
+  font-family: 'Dancing Script', cursive;
+}
+.mainCard {
+  // margin-top: 40px;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: #fdf6f0;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.cardView {
+  margin-top: 40px;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.imageCard {
+  width: 100%;
+  // overflow: hidden;
+}
+.cardHeader {
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: bolder;
+  color: #888;
+}
+.cardDescription {
+  padding: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .mainContainer{
+    flex-direction: column;
+    width: 100%;
+  }
+  .imageCover {
+    width: 100%;
+    height: 300px;
+  }
+  .mainCard{
+    height: 100%;
+  }
+  .motoDiv{
+    top: 323px;
+    font-size: 35px;
+  }
+  .cardContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardView{
+    width: 100%;
+  }
+}

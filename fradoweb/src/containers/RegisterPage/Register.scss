@@ -1,0 +1,92 @@
+.formContainer {
+  display: flex;
+
+  justify-content: space-around;
+
+  background-color: #f5f5f5;
+}
+.form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+  // border: 1px solid #998d8d81;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 800px;
+  height: 900px;
+  background-color: #ffffff;
+}
+.inputItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.field {
+  border: none;
+  border-bottom: 1px solid blue;
+  padding: 10px;
+  /* border-radius: 10px; */
+  margin: 15px;
+  outline: none;
+  width: 600px;
+}
+.multiselectDiv {
+  width: 600px;
+}
+.errorMessage {
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: red;
+}
+.image {
+  width: 100px;
+  margin-top: 100px;
+}
+.formHeader {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #998d8d;
+}
+
+.submitButton {
+  margin-top: 56px;
+  width: 400px;
+  height: 50px;
+  padding: 5px;
+  outline: none;
+  color: white;
+  background: #307fde 0% 0% no-repeat padding-box;
+  border: 1px solid #b3acac;
+  border-radius: 7px;
+  opacity: 1;
+  border: none;
+}
+.submitButton:focus {
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    justify-content: center;
+  }
+  .form {
+    width: 100%;
+  }
+  .field {
+    width: 80%;
+  }
+  .multiselectDiv {
+    width: 42%;
+  }
+  .submitButton{
+    width: 50%;
+  }
+}
