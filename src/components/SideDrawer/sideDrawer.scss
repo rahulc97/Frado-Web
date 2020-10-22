@@ -1,4 +1,4 @@
-.sideDrawer{
+.sideDrawer {
   position: fixed;
   width: 280px;
   max-width: 70%;
@@ -7,24 +7,45 @@
   top: 0;
   z-index: 200;
   background-color: white;
-  padding: 32px 16px;
+  padding: 32px 0px;
   box-sizing: border-box;
   transition: transform 0.3s ease-out;
 }
 
-.logo{
-  width:150px;
+.logo {
+  width: 150px;
   height: 150px;
+  margin-bottom: 10px;
 }
-@media (min-width:500px){
-  .sideDrawer{
+.drawerItem {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  /* border-bottom: 1px solid black; */
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.drawerLink{
+  width: 100%;
+  font-size: 20px;
+  color: #525252;
+  font-weight: bold;
+  text-decoration: none !important;
+  &:hover{
+    color: black;
+  }
+}
+@media (min-width: 500px) {
+  .sideDrawer {
     display: none;
   }
 }
 
-.open{
+.open {
   transform: translateX(0);
 }
-.close{
+.close {
   transform: translateX(-100%);
 }

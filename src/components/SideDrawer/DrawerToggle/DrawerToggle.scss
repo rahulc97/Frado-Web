@@ -1,6 +1,6 @@
 .DrawerToggle {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -8,7 +8,8 @@
   padding: 10px 0;
   box-sizing: border-box;
   cursor: pointer;
-  background-color: white;
+  // background-color: white;
+  background-color: #072f66;
   border-radius: 50%;
   border: 2px solid #072f66;
 }
@@ -17,9 +18,10 @@
   margin-top: 3px;
   margin-bottom: 3px;
   width: 50%;
-  height: 3px;
+  height: 4px;
 //   background-color: rgb(80, 63, 63);
-background-color: #072f66;
+// background-color: #072f66;
+background-color: white;
 }
 // .DrawerToggle
 

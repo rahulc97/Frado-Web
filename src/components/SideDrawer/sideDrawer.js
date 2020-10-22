@@ -17,17 +17,17 @@ const sideDrawer = (props) => {
         <div className={attachedClasses.join(' ')}>
           <img className="logo" src={Logo} alt="logo" />
           <nav>
-            <li>
-              <a href="/"> Home</a>
+            <li className='drawerItem'>
+              <a href="/" className='drawerLink'> Home</a>
             </li>
-            <li>
-              <a href="/about"> About Us</a>
+            <li className='drawerItem'>
+              <a href="/about" className='drawerLink'> About Us</a>
             </li>
-            <li>
-              <a href="/contact"> Contact Us</a>
+            <li className='drawerItem'>
+              <a href="/contact" className='drawerLink'> Contact Us</a>
             </li>
-            <li>
-              <a href="/register"> Register Now</a>
+            <li className='drawerItem'>
+              <a href="/register" className='drawerLink'> Register Now</a>
             </li>
           </nav>
         </div>
