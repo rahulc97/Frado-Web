@@ -53,10 +53,13 @@
   // overflow: hidden;
 }
 .cardHeader {
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 35px;
   font-weight: bolder;
-  color: #888;
+  color: white;
+  // background-color: rgb(4, 0, 255);
+ background-color:  rgb(32, 59, 59);
 }
 .cardDescription {
   padding: 30px;
