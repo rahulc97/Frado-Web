@@ -41,9 +41,14 @@
   justify-content: space-around;
   margin-bottom: 50px;
 }
+.fradoTitle{
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
+}
 .cardView {
   margin-top: 40px;
-  width: 40%;
+  width: 30%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -62,10 +67,14 @@
  background-color:  rgb(32, 59, 59);
 }
 .cardDescription {
-  padding: 30px;
+  padding: 45px;
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 30px;
+  font-size: 20px;
+}
+.comingSoon{
+  padding: 25px;
 }
 
 @media (max-width: 499px) {

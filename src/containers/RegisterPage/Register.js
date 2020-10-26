@@ -10,8 +10,8 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 
 const Register = (props) => {
   const courseArray = [
-    { name: 'PSC Course', id: 'PSC' },
     { name: 'NTPC Course', id: 'NTPC' },
+    // { name: 'PSC Course', id: 'PSC' },
   ];
 
   const [multiList, setMultiList] = useState([]);
