@@ -2,15 +2,18 @@ import axios from '../../axios';
 import React, { useEffect, useState } from 'react';
 import './AdminPage.scss';
 import Table from '../../components/Table/Table';
-// import "react-table/react-table.css";
+import Spinner from '../../components/UI/Spinner/Spinner';
 
 const AdminPage = (props) => {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
+    setIsLoading(true);
     axios
       .get('/fetchAllUserData58fdbf5c0ef8a50b4cdd9a8b')
       .then((res) => {
         let userDatas = res.data;
+        setIsLoading(false);
         setData(userDatas);
         let destructuredData = [];
         userDatas.forEach((user) => {
@@ -27,14 +30,15 @@ const AdminPage = (props) => {
         // setData(destructuredData)
       })
       .catch((err) => {
+        setIsLoading(false);
         console.log(err);
       });
   }, []);
 
   return (
     <div className="containerAdmin">
-      <div className='titleText'>Registered Users</div>
-      <Table data={data} />
+      <div className="titleText">Registered Users</div>
+      {isLoading ? <Spinner show={isLoading} /> : <Table data={data} />}
     </div>
   );
 };
