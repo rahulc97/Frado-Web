@@ -63,7 +63,7 @@ const MainPage = (props) => {
             <h3 style={{ color: 'red' }}>Class starts on 3-11-2020</h3>
             <p>
               <strong>
-                Fee : <del> &nbsp;3000 Rs&nbsp; </del> &nbsp;2000/- Rs Only
+                Fee : <del> &nbsp;3000 Rs </del> &nbsp;2000/- Rs Only
               </strong>
             </p>
           </div>
