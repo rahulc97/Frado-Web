@@ -53,11 +53,11 @@ const MainPage = (props) => {
           <div className="cardHeader">NTPC MENTOR</div>
           <div className="cardDescription">
             • Quantitative Aptitude and Reasoning Classes
-            <br /> • Online class with 20 students in each batch
+            <br />• Online class with 20 students in each batch
             <br />• Personal Mentoring and Doubt clearing sessions
             <br />• Short cuts and Maths Tricks
             <br />• Discussion through PYQs
-            <br /> • Other results improving activities
+            <br />• Other results improving activities
             <br />
             <br />
             <h3 style={{ color: 'red' }}>Class starts on 3-11-2020</h3>
@@ -66,6 +66,7 @@ const MainPage = (props) => {
                 Fee : <del> &nbsp;3000 Rs </del> &nbsp;2000/- Rs Only
               </strong>
             </p>
+            <button className='registerButton' onClick={()=>{props.history.push('/register')}}>Register Now</button>
           </div>
         </div>
 

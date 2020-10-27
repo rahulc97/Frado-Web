@@ -68,10 +68,20 @@
 }
 .cardDescription {
   padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: justify;
   text-justify: inter-word;
   margin-bottom: 30px;
   font-size: 20px;
+}
+.registerButton{
+  outline: none;
+  background: #203b3b;
+  border: none;
+  color: white;
+  padding: 10px;
 }
 .comingSoon{
   padding: 25px;

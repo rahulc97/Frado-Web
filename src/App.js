@@ -7,6 +7,7 @@ import MainPage from './containers/MainPage/MainPage';
 import Register from './containers/RegisterPage/Register';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import AdminPage from './containers/AdminPage/AdminPage';
+import ContactUs from './containers/ContactUs/ContactUs';
 
 function App() {
   const [sideDrawer, setShowSideDrawer] = useState(false);
@@ -24,8 +25,10 @@ function App() {
       </div>
       <Switch>
         <Route path="/register" component={Register} />
+        <Route path="/contact" component={ContactUs} />
         <Route path="/frado_admin/5f919e6dcac4a5da16a36f04/users" component={AdminPage} />
         <Route strict path="/" component={MainPage} />
+    
       </Switch>
     </div>
   );
