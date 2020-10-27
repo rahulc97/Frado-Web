@@ -1,9 +1,9 @@
 import React from 'react';
-import MainCoverImage from '../../assets/girlWrite.jpeg';
+import MainCoverImage from '../../assets/coverPic.jpeg';
 import ComputerImage from '../../assets/computer.jpeg';
-import BookImage from '../../assets/book.jpeg';
+import BookImage from '../../assets/pscPic.jpeg';
 import NewImage from '../../assets/new.png';
-import LapBook from '../../assets/lapBook.jpeg';
+import LapBook from '../../assets/sscPic.jpeg';
 import ComingSoon from '../../assets/comingSoon.png';
 import './MainPage.scss';
 
