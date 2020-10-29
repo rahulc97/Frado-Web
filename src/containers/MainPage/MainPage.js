@@ -38,8 +38,9 @@ const MainPage = (props) => {
         <a href="/register" style={{ color: 'inherit' }}>
           <marquee>
             <img style={{ width: '40px' }} src={NewImage} alt="new" />
-            &nbsp;&nbsp;&nbsp;Course Registration Started....Register Now To
-            Join Our Course....!&nbsp;&nbsp;&nbsp;
+            {/* &nbsp;&nbsp;&nbsp;Course Registration Started....Register Now To
+            Join Our Course....!&nbsp;&nbsp;&nbsp; */}
+            &nbsp;&nbsp;&nbsp;Free Webinar on NTPC...Register Here to Grab Your Seats....!&nbsp;&nbsp;&nbsp;
             <img style={{ width: '40px' }} src={NewImage} alt="new" />
           </marquee>
         </a>
@@ -60,13 +61,23 @@ const MainPage = (props) => {
             <br />• Other results improving activities
             <br />
             <br />
-            <h3 style={{ color: 'red' }}>Class starts on 3-11-2020</h3>
-            <p>
+            <h3 style={{ color: 'red' }}>
+              <p>FREE WEBINAR ON NTPC </p>
+            </h3>
+            {/* <h3 style={{ color: 'red' }}>Class starts on 3-11-2020</h3> */}
+            {/* <p>
               <strong>
                 Fee : <del> &nbsp;3000 Rs </del> &nbsp;2000/- Rs Only
               </strong>
-            </p>
-            <button className='registerButton' onClick={()=>{props.history.push('/register')}}>Register Now</button>
+            </p> */}
+            <button
+              className="registerButton"
+              onClick={() => {
+                props.history.push('/register');
+              }}
+            >
+              Register Now
+            </button>
           </div>
         </div>
 
@@ -94,7 +105,7 @@ const MainPage = (props) => {
         <div className="cardView">
           <img className="imageCard" src={LapBook} alt="img" />
           <div className="cardHeader">SSC </div>
-          <img src={ComingSoon} alt="comingSoon"  className="comingSoon"/>
+          <img src={ComingSoon} alt="comingSoon" className="comingSoon" />
           {/* uncomment and add description below */}
           {/* <div className="cardDescription">
             There are many variations of passages of Lorem Ipsum available, but

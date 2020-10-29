@@ -10,7 +10,8 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 
 const Register = (props) => {
   const courseArray = [
-    { name: 'NTPC Course', id: 'NTPC' },
+    { name: 'Free Webinar', id: 'NTPC_WEBINAR' },
+    // { name: 'NTPC Course', id: 'NTPC' },
     // { name: 'PSC Course', id: 'PSC' },
   ];
 
